@@ -5,6 +5,7 @@ function login() {
 
   const validUsers = [
     { username: "admin", password: "admin123" },
+    { username: "Avijit", password: "avijit" },
     { username: "user", password: "user123" }
   ];
 
