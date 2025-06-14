@@ -6,7 +6,7 @@ function login() {
   const validUsers = [
     { username: "admin", password: "admin123" },
     { username: "user", password: "user123" },
-    { username: "john", password: "pass123" },
+    { username: "Avijit", password: "avijit123" },
     { username: "test", password: "test456" }
   ];
 
