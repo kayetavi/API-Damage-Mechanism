@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
 }
 
 .dashboard {
@@ -10,52 +10,94 @@ body {
   height: 100vh;
 }
 
+/* Top Bar */
 .top-bar {
-  background: #007bff;
-  color: white;
-  padding: 10px 20px;
+  background: #0056b3; /* Deep blue */
+  color: #ffffff;
+  padding: 12px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* Layout Container */
 .container {
   display: flex;
   height: 100%;
 }
 
+/* Sidebar */
 .sidebar {
   width: 25%;
-  background: #eaeaea;
-  padding: 10px;
+  background: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 15px;
   overflow-y: auto;
 }
 
-.content {
-  width: 75%;
-  padding: 20px;
-  background: #fff;
-  overflow-y: auto;
+.sidebar h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
 }
 
+/* Sidebar List Items */
 ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 li {
-  padding: 8px;
+  padding: 10px;
   cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 li:hover {
-  background-color: #dcdcdc;
+  background-color: #f0f0f0;
 }
 
-h3 {
+/* Active/Selected Item - optional */
+li.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Main Content Area */
+.content {
+  width: 75%;
+  padding: 24px;
+  background: #fdfdfd;
+  overflow-y: auto;
+}
+
+.content h3 {
+  color: #007bff;
   margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 22px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 4px;
 }
 
+/* Mechanism Info Box */
 .mechanism-info {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #f9f9f9;
+  border-left: 4px solid #007bff;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.mechanism-info p {
+  margin: 5px 0;
+  color: #444;
 }
