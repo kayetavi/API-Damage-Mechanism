@@ -14,61 +14,25 @@ function logout() {
 const data = {
   "1. High Temperature Corrosion": {
     "High-temperature H₂/H₂S Corrosion": {
-      description: "Corrosion in high-temp environments with H₂ and H₂S.",
+      description: "Corrosion in high-temp environments with H2 and H2S.",
       materials: "Carbon steel, low alloy steel",
-      criticalFactors: "Temperature > 400°F, sulfur & hydrogen presence",
-      affectedUnits: "Hydroprocessing units, heaters",
-      appearance: "Wastage, thinning, bulging",
-      mitigation: "Resistant alloys, temp control",
-      inspection: "UT, IR scan, visual"
+      criticalFactors: "Temperature above 400°F, presence of sulfur and hydrogen",
+      affectedUnits: "Hydroprocessing units, furnaces, reactors",
+      appearance: "Wastage, thinning, bulging surfaces",
+      mitigation: "Use resistant alloys, temperature control",
+      inspection: "UT thickness, IR scanning, visual inspection"
     },
     "Graphitization": {
-      description: "Carbon migrates forming graphite, leading to brittleness.",
+      description: "Degradation due to carbon migration forming graphite.",
       materials: "Carbon steel",
-      criticalFactors: "Extended exposure at 800–1100°F",
-      affectedUnits: "Old exchangers, heaters",
-      appearance: "Gray brittle fracture",
-      mitigation: "Upgrade material, replace parts",
-      inspection: "Metallography, hardness"
-    },
-    "High-temperature Hydrogen Attack": {
-      description: "Hydrogen reacts with carbon in steel at high temps.",
-      materials: "Carbon steel",
-      criticalFactors: "H₂ partial pressure, temperature > 400°C",
-      affectedUnits: "Hydrotreaters, hydrogen furnaces",
-      appearance: "Internal fissures, cracks",
-      mitigation: "Use Cr-Mo steels or upgrade metallurgy",
-      inspection: "UT, A-scan, TEPCO method"
-    },
-    "Oxidation": {
-      description: "Metal reacts with oxygen at high temperature forming scale.",
-      materials: "Carbon steel, low alloy steels",
-      criticalFactors: "High temperature and oxygen presence",
-      affectedUnits: "Furnace tubes, reformers",
-      appearance: "Flaky oxide layers, metal loss",
-      mitigation: "Coatings, alloy upgrade",
-      inspection: "Visual, weight loss, thickness"
-    },
-    "Carburization": {
-      description: "Carbon diffuses into metal, causing hardening and embrittlement.",
-      materials: "Low alloy steels",
-      criticalFactors: "Carbonaceous gases at high temperature",
-      affectedUnits: "Reformer tubes, furnaces",
-      appearance: "Brittle surface, hardness rise",
-      mitigation: "Use austenitic stainless steels",
-      inspection: "Hardness test, metallography"
+      criticalFactors: "Extended service at 800–1100°F",
+      affectedUnits: "Old heat exchangers, fired heaters",
+      appearance: "Brittle failure, gray/black fracture surface",
+      mitigation: "Material upgrade, replace affected components",
+      inspection: "Metallography, hardness testing"
     }
   },
-
-  "2. Aqueous Environment Damage": {
-    "Wet H2S Damage (Blistering/HIC/SOHIC/SSC)": {
-      description: "Hydrogen damage under wet H2S conditions causing blisters or cracks.",
-      materials: "Carbon steel",
-      criticalFactors: "Wet H2S, tensile stress",
-      affectedUnits: "Drums, sour water systems",
-      appearance: "Blisters, surface cracks",
-      mitigation: "Use HIC-resistant steel, coating",
-      inspection: "UT, MT, PAUT"
+  // Add more categories and mechanisms
 };
 
 const categoryList = document.getElementById("categoryList");
