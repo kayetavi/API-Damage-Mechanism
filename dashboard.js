@@ -1,5 +1,6 @@
 const username = localStorage.getItem("loggedInUser");
 const welcomeDiv = document.getElementById("welcome");
+
 if (username) {
   welcomeDiv.textContent = "Welcome, " + username;
 } else {
@@ -69,6 +70,8 @@ const data = {
       appearance: "Blisters, surface cracks",
       mitigation: "Use HIC-resistant steel, coating",
       inspection: "UT, MT, PAUT"
+    }
+  }
 };
 
 const categoryList = document.getElementById("categoryList");
