@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login | API 571 Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <div class="error" id="errorMsg"></div>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+      const error = document.getElementById("errorMsg");
+
+      const validUsers = [
+        { username: "admin", password: "admin123" },
+        { username: "user", password: "user123" }
+      ];
+
+      const found = validUsers.find(u => u.username === user && u.password === pass);
+
+      if (found) {
+        localStorage.setItem("loggedInUser", user);
+        window.location.href = "dashboard.html";
+      } else {
+        error.textContent = "Invalid username or password";
+      }
+    }
+  </script>
+</body>
+</html>
