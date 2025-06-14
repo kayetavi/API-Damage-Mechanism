@@ -57,7 +57,7 @@ const data = {
       mitigation: "Use HIC-resistant steel, coating",
       inspection: "UT, MT, PAUT"
     }
-    // Add more mechanisms here...
+    // You can add more mechanisms here, just ensure they're comma-separated and valid
   },
 
   "3. Chemical Damage": {
@@ -70,7 +70,6 @@ const data = {
       mitigation: "PWHT, use corrosion-resistant alloys",
       inspection: "WFMT, UT, replication"
     }
-    // Add more mechanisms here...
   },
 
   "4. Mechanical and Metallurgical Damage": {
@@ -83,7 +82,6 @@ const data = {
       mitigation: "Design flexibility, material upgrade",
       inspection: "Dye Penetrant, VT"
     }
-    // Add more mechanisms here...
   },
 
   "5. MIC and Environmental": {
