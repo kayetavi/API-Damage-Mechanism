@@ -46,7 +46,6 @@ const data = {
       inspection: "Hardness test, metallography"
     }
   },
-
   "2. Aqueous Environment Damage": {
     "Wet H2S Damage (Blistering/HIC/SOHIC/SSC)": {
       description: "Hydrogen damage under wet H2S conditions causing blisters or cracks.",
@@ -58,7 +57,6 @@ const data = {
       inspection: "UT, MT, PAUT"
     }
   },
-
   "3. Chemical Damage": {
     "Caustic Stress Corrosion Cracking": {
       description: "Cracking due to caustic exposure and tensile stress.",
@@ -70,7 +68,6 @@ const data = {
       inspection: "WFMT, UT, replication"
     }
   },
-
   "4. Mechanical and Metallurgical Damage": {
     "Thermal Fatigue": {
       description: "Cracking from repeated thermal cycling.",
@@ -82,7 +79,6 @@ const data = {
       inspection: "Dye Penetrant, VT"
     }
   },
-
   "5. MIC and Environmental": {
     "Microbiologically Influenced Corrosion": {
       description: "Localized attack due to microbes in aqueous environments.",
