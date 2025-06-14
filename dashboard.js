@@ -1,6 +1,5 @@
 const username = localStorage.getItem("loggedInUser");
 const welcomeDiv = document.getElementById("welcome");
-
 if (username) {
   welcomeDiv.textContent = "Welcome, " + username;
 } else {
@@ -70,8 +69,6 @@ const data = {
       appearance: "Blisters, surface cracks",
       mitigation: "Use HIC-resistant steel, coating",
       inspection: "UT, MT, PAUT"
-    }
-  }
 };
 
 const categoryList = document.getElementById("categoryList");
@@ -91,7 +88,7 @@ Object.entries(data).forEach(([category, mechanisms]) => {
     mechItem.textContent = mech;
     mechItem.onclick = () => {
       selectedTitle.textContent = mech;
-      mechanismDetailsContainer.innerHTML = `
+      mechanismDetailsContainer.innerHTML = 
         <div class="mechanism-info"><strong>Description of Damage:</strong> ${info.description}</div>
         <div class="mechanism-info"><strong>Affected Materials:</strong> ${info.materials}</div>
         <div class="mechanism-info"><strong>Critical Factors:</strong> ${info.criticalFactors}</div>
@@ -99,7 +96,7 @@ Object.entries(data).forEach(([category, mechanisms]) => {
         <div class="mechanism-info"><strong>Appearance or Morphology of Damage:</strong> ${info.appearance}</div>
         <div class="mechanism-info"><strong>Prevention/Mitigation:</strong> ${info.mitigation}</div>
         <div class="mechanism-info"><strong>Inspection and Monitoring:</strong> ${info.inspection}</div>
-      `;
+      ;
     };
     mechList.appendChild(mechItem);
   });
