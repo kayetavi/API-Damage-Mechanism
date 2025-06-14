@@ -5,8 +5,9 @@ function login() {
 
   const validUsers = [
     { username: "admin", password: "admin123" },
-    { username: "Avijit", password: "avijit" },
-    { username: "user", password: "user123" }
+    { username: "user", password: "user123" },
+    { username: "john", password: "pass123" },
+    { username: "test", password: "test456" }
   ];
 
   const found = validUsers.find(u => u.username === user && u.password === pass);
